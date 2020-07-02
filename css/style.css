@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* config main */
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+ul {
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	width:100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+	line-height:1.5;
+	
+}
+
+h1,h2 {
+	line-height:1.2;
+	font-weight:300;
+}
+
+
+
+
+/* End Config main*/
+
+
+/* start maincase and navabr*/
+
+.maincase {
+	background:#173f4f;
+}
+
+#navbar {
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	position:sticky;
+	top:0;
+	left:0;
+	height:70px;
+	opacity:0.8;
+	color:#2fa098;
+	
+	/* or can other way
+	   position:fixed;
+	   width:100%;
+	*/
+	
+}
+
+.logo{
+	width:70px;
+	margin:0 20px;
+	
+}
+
+ul {
+	display:flex;
+	
+}
+
+ul a {
+	color:#2fa098;
+	padding:10px 20px;
+	margin:0 5px;
+}
+
+
+/* End maincase and navbar*/
+
