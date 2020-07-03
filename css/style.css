@@ -51,6 +51,7 @@ h2 {
   background: #173f4f;
   padding: 1rem;
   height: 70px;
+  margin-bottom: 2rem;
 
   /* or can other way
 	   position:fixed;
@@ -91,22 +92,24 @@ ul {
 .maincase-content h2 {
   text-align: center;
   color: #2fa098;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-top: 10rem;
+ 
+  
 }
+
 
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 1rem;
 }
 
 .flex-item p {
   color: #fff;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
 }
 
 .flex img {
@@ -177,8 +180,8 @@ p {
 }
 
 .tools-item:hover {
-	background: #ddd;
-	box-shadow: 0 2px 10px rgba(0	, 0, 0,0.5);
+  background: #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .tools-item a {
@@ -192,10 +195,10 @@ p {
 
 .tools-item img {
   width: 50%;
-	padding: 1rem;
+  padding: 1rem;
 
-	align-self: center;
-	justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 
 /* end tools*/
@@ -203,151 +206,192 @@ p {
 /* Start cases section*/
 
 section#cases {
-	background: #fff;
-	padding: 1rem;
-	margin-bottom: 1rem;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #cases h1 {
-	padding: 1rem;
+  padding: 1rem;
 }
 #cases p {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cases {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2rem;
-	margin: 1rem;
-	padding: 1rem;
-	background: #f6f6f6;
+  grid-gap: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  background: #f6f6f6;
 }
 
 /* End cases section*/
 
-
 /* blog section*/
 
 section#blog {
-	background:linear-gradient(to right, rgba(0	, 0, 0,0.8),rgba(0, 0, 0,0.8)), url('../img/blog/main.jpg') no-repeat center center/cover;
-	background-attachment: fixed;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: #fff;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../img/blog/main.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
-.blog-content{
- display: grid;
- grid-template-columns: 4fr 4fr ;
- grid-gap: 4rem;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	
+.blog-content {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .blog-content a {
-	color: #fff;
-	margin: 1rem;
-	padding: 1rem;
-	text-align: center;
-	transition: all 1s ease-in-out;
-	border: none;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  border: none;
 }
 
-.blog-icon:hover{
-	background: #fff;
-	border-radius: 10%;
-	color: #173f4f;
-
-
-
+.blog-icon:hover {
+  background: #fff;
+  border-radius: 10%;
+  color: #173f4f;
 }
 
 /* end blog section*/
 
-
 /* contact section start*/
-
 
 #contact {
   margin-bottom: 10rem;
 }
 #contact .form-fields {
-display: grid;
-grid-template-areas: 
-"name email"
-"subject phone"
-"message message"
-;
-grid-gap: 1rem;
-margin-bottom: 1rem;
+  display: grid;
+  grid-template-areas:
+    'name email'
+    'subject phone'
+    'message message';
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 form {
-	padding: 2rem;
+  padding: 2rem;
 }
 
-.name-input{
-	grid-area: name;
+.name-input {
+  grid-area: name;
 }
-.email-input{
-	grid-area: email;
+.email-input {
+  grid-area: email;
 }
-.subject-input{
-	grid-area: subject;
+.subject-input {
+  grid-area: subject;
 }
-.phone-input{
-	grid-area: phone;
+.phone-input {
+  grid-area: phone;
 }
-.message-input{
-	grid-area: message;
-	height: 100px;
+.message-input {
+  grid-area: message;
+  height: 100px;
 }
 
 .text-input {
-	padding: 0.5rem 1rem;
-
+  padding: 0.5rem 1rem;
 }
 
 .btn1 {
-	display: block;
-	color: #fff;
-	background: red;
-	border: none;
-	width: 50%;
-	text-align: center;
-	padding: 0.50rem;
-	margin: 0 auto;
-	cursor: pointer;
+  display: block;
+  color: #fff;
+  background: red;
+  border: none;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 /*contact section End*/
 
-
 /* start footer*/
 
-footer{
+footer {
   display: grid;
   grid-template-columns: 6fr 4fr 2fr;
   background: #173f4f;
   color: #6da741;
   align-items: center;
   justify-content: center;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 footer img {
   width: 40px;
 }
 
-
-
-footer a{
-color: #6da741;
-padding: 0 10px;  
+footer a {
+  color: #6da741;
+  padding: 0 10px;
 }
 /* end footer*/
+
+/*media query*/
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+   height: 120px;
+    margin-bottom: 2rem;
+    padding: 20px;
+  }
+
+  #navbar a {
+    padding: 10px 10px;
+    margin:0 3px;
+  }
+
+  .lead {
+    margin-top: 4rem;
+  }
+
+  .logo {
+    padding-bottom: 20px;
+  }
+
+  .tools-main {
+    grid-template-columns: 1fr;
+  }
+  .cases {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .blog-content{
+    grid-template-columns: 1fr;
+  }
+
+  #contact .form-fields{
+    grid-template-areas:
+    'name  name'
+    'email email'
+    'subject subject'
+    'phone phone'
+    'message message'
+    ;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+  }
+}
