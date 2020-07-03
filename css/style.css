@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -38,7 +42,7 @@ h2 {
   background: #173f4f;
 }
 
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,12 +56,17 @@ h2 {
   padding: 1rem;
   height: 70px;
   margin-bottom: 2rem;
+  transition: 0.5s;
+
 
   /* or can other way
 	   position:fixed;
 	   width:100%;
 	*/
 }
+ .navbar.top{
+  background: transparent;
+} 
 
 .logo {
   width: 70px;
@@ -135,22 +144,22 @@ ul {
 
 /* start tools*/
 
-section#tools {
+section#about {
   background: #f6f6f6;
 }
 
-#tools h1,
+#about h1,
 p {
   text-align: center;
   padding: 0.5rem;
 }
 
-#tools h1 {
+#about h1 {
   font-size: 3rem;
   padding-top: 2rem;
 }
 
-#tools p {
+#about p {
   color: #777;
 }
 
@@ -347,14 +356,14 @@ footer a {
 /*media query*/
 
 @media (max-width: 768px) {
-  #navbar {
+  .navbar {
     flex-direction: column;
    height: 120px;
     margin-bottom: 2rem;
     padding: 20px;
   }
 
-  #navbar a {
+  .navbar a {
     padding: 10px 10px;
     margin:0 3px;
   }
