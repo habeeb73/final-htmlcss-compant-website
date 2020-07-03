@@ -273,6 +273,10 @@ section#blog {
   background: #fff;
   border-radius: 10%;
   color: #173f4f;
+ 
+}
+a:hover{
+  transform: rotateZ(360deg)
 }
 
 /* end blog section*/
@@ -404,3 +408,31 @@ footer a {
     padding: 2rem;
   }
 }
+
+
+/* animations*/
+
+
+ h2,.ani {
+  transform: translateY(-1200px);
+  animation: heading 2s forwards ease-in;
+ 
+}
+/* 
+.blog-content a {
+  transform: translateX(-1200px);
+  animation: blog 2s forwards ease-in;
+} */
+
+/*key frams*/
+@keyframes heading {
+  to{
+  transform: translateY(0);
+  }
+}
+
+/* @keyframes blog {
+  to{
+  transform: translateY(0);
+  }
+} */
